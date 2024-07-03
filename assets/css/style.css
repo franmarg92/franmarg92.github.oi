@@ -93,7 +93,13 @@ nav{
     display: flex;
     justify-content: center;
 }
+.habilidades{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
 
+}
 
 #Contacto{
     height: 100vh;
