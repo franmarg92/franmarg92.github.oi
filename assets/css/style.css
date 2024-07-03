@@ -4,13 +4,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #343a40;
 }
 
 
 .logo{
     font-size: 30px;
     text-decoration: none;
-    color:black;
+    color:white;
     margin-left: 20px;
     font-weight: 600;
 }
@@ -18,12 +19,15 @@
     color: #00abf0;
 }
 
+nav{
+    margin-right: 20px;
+}
 
 .navbar a{
     
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     transition: .3s;
     margin-left: 35px;
     
@@ -100,3 +104,5 @@
     display: flex;
     justify-content: center;
 }
+
+
