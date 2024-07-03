@@ -18,10 +18,7 @@
 .logo span{
     color: #00abf0;
 }
-.home-content{
-    display: flex;
 
-}
 
 nav{
     margin-right: 20px;
@@ -43,14 +40,14 @@ nav{
 }
 
 .home{
-    height: 100vh;
+    height: 600px;
     display: flex;
     align-items: center;
     
 }
 
 .home-content{
-    
+    display: flex;
     margin-left:  100px;
     max-width: 600px;
     
@@ -73,7 +70,7 @@ nav{
 }
 #Sobre-mi{
     
-    height: 100vh;
+    height: 600px;
     
     
 }
@@ -83,7 +80,7 @@ nav{
 }
 
 #Estudios{
-    height: 100vh;
+    height: 50vh;
     
     
     
@@ -94,9 +91,7 @@ nav{
 }
 
 #Habilidades{
-    height: 100vh;
-    
-    
+    height: 300px;
     
 }
 #Habilidades h1{
@@ -104,8 +99,20 @@ nav{
     justify-content: center;
 }
 
+.habilidades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+.habilidades img{
+    border-radius: 30%;
+    border: #343a40 solid;
+    margin-right: 100px;
+}
 #Contacto{
-    height: 100vh;
+    height: 470px;
    
     
 }
