@@ -18,6 +18,10 @@
 .logo span{
     color: #00abf0;
 }
+.home-content{
+    display: flex;
+
+}
 
 nav{
     margin-right: 20px;
@@ -57,9 +61,15 @@ nav{
 
 .aboutme{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    margin: 200px;
+    margin-top: 150px;
+}
+
+.aboutme img{
+    border-radius: 30%;
+    border: #343a40 solid;
+    margin-right: 200px;
 }
 #Sobre-mi{
     
@@ -92,13 +102,6 @@ nav{
 #Habilidades h1{
     display: flex;
     justify-content: center;
-}
-.habilidades{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 150px;
-
 }
 
 #Contacto{
