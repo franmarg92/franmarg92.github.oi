@@ -44,7 +44,7 @@ nav{
 }
 
 .home{
-    height: 600px;
+    height: 100vh;
     display: flex;
     align-items: center;
     
@@ -74,7 +74,7 @@ nav{
 }
 #Sobre-mi{
     
-    height: 600px;
+    height: 100vh;
     
     
 }
@@ -84,7 +84,7 @@ nav{
 }
 
 #Estudios{
-    height: 50vh;
+    height: 100vh;
     
     
     
@@ -95,7 +95,7 @@ nav{
 }
 
 #Habilidades{
-    height: 300px;
+    height: 100vh;
     
 }
 #Habilidades h1{
@@ -116,7 +116,7 @@ nav{
     margin-right: 100px;
 }
 #Contacto{
-    height: 470px;
+    height: 100vh;
    
     
 }
