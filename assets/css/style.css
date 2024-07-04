@@ -46,14 +46,18 @@ nav{
 .home{
     height: 100vh;
     display: flex;
-    align-items: center;
+    background-image: url("https://codersfree.nyc3.cdn.digitaloceanspaces.com/posts/descubre-los-6-lenguajes-de-programacion-con-mas-demanda-en-el-2023.jpg") ;
+    background-size: cover; 
+    background-position: center; 
     
 }
 
 .home-content{
     display: flex;
-    margin-left:  100px;
+    align-items: center;
+    margin-left:  1200px;
     max-width: 600px;
+    
     
 }
 .primerletra{
@@ -75,6 +79,7 @@ nav{
 #Sobre-mi{
     
     height: 100vh;
+   
     
     
 }
