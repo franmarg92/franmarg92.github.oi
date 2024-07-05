@@ -15,12 +15,14 @@
         <nav class="navbar">
             <a href="#home" class="active">Inicio</a>
             <a href="#Sobre-mi">Sobre mi</a>
-            <a href="#Estudios">Estudios</a>
+            <a href="#Proyectos">Proyectos</a>
             <a href="#Habilidades">Habilidades</a>
             <a href="#Contacto">Contacto</a>
         </nav>
     </header>
     <main>
+
+
         <section id="home" class="section active">
             <div class="home-content">
                 <div class="text-light">
@@ -35,17 +37,19 @@
                     <div class="text-center">
                         <a href="https://drive.google.com/file/d/1Yx3ebPrkakAPFIA4lnNAZn71OUAZyMWN/view" class="btn btn-outline-info" download="Mi_CV.pdf">Descargar CV</a>
                     </div>
+
                 </div>
             </div>
+
+
         </section>
         <section id="Sobre-mi" class="section">
-            <h1><span class="primerletra">S</span>obre mi</h1>
-            <div class="habilidades">
+            <div class="Sobre-mi">
                 <div>
                     <img src="./assets/image/668C4C0D-FA4D-4362-B01B-BD9A317141E8.jpeg" width="300px" alt="foto">        
                 </div>
                 <div>
-                    <ul>
+                    <ul class="text-light">
                         <li><p><strong>Nombre:</strong> Franco Gabrielleschi</p></li>
                         <li><p><strong>Fecha de Nacimiento:</strong> 03/04/1992</p></li>
                         <li><p><strong>Nacionalidad:</strong> Argentino</p></li>
@@ -55,49 +59,82 @@
                 </div>
             </div>
         </section>
-        <section id="Estudios" class="section">
-            <h1><span class="primerletra">E</span>studios</h1>
+
+
+
+        <section id="Proyectos" class="section">
+            <div class="row text-center mt-5 justify-content-center">
+                <div class="col-12 col-sm-4 py-2 d-flex justify-content-center">
+                    <img src="./assets/image/127.0.0.1_5500_Protecto3_Index.html.png" width="260px" alt="Proyecto1">
+                </div>
+                <div class="col-12 col-sm-4 py-2 d-flex justify-content-center">
+                    <img src="./assets/image/127.0.0.1_5500_Proyecto2_index.html.png" width="350px" alt="Proyecto2">
+                </div>
+                <div class="col-12 col-sm-4 py-2 d-flex justify-content-center">
+                    <img src="./assets/image/127.0.0.1_5500_Proyecto4_index.html.png" width="380px" alt="Proyecto3">
+                </div>
+            </div>
         </section>
+
+
+
         <section id="Habilidades" class="section">
-            <h1><span class="primerletra">H</span>abilidades</h1>
-            <div class="row text-center mt-5">
+            <div class="row text-center mt-5" class="habilidades">
                 <div class="col-12 col-sm-4 py-2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYk594AhSKw5Eb3iHkPHs_XmpCqaRVgu0mvg&s" width="150px" alt="html">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/html-5-logo-png-transparent.png" width="90px" alt="html">
                 </div>
                 <div class="col-12 col-sm-4 py-2">
                     <img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" width="150px" alt="css">
                 </div>
                 <div class="col-12 col-sm-4 py-2">
-                    <img src="https://1000marcas.net/wp-content/uploads/2020/11/JavaScript-logo.jpg" width="230px" alt="JS">
+                    <img src="https://1000marcas.net/wp-content/uploads/2020/11/JavaScript-logo.png" width="230px" alt="JS">
+                </div>
+                <div class="col-12 col-sm-4 py-2">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/06/Git-Logo-500x313.png" width="230px" alt="git">
+                </div>
+                <div class="col-12 col-sm-4 py-2">
+                    <img src="https://1000marcas.net/wp-content/uploads/2020/02/logo-GitHub-500x281.png" width="230px" alt="git">
                 </div>
             </div>
         </section>
+
+
+
+
         <section id="Contacto" class="section">
-            <h1><span class="primerletra">C</span>ontacto</h1>
             <form class="mt-5 p-5">
                 <div class="form-group mb-4">
-                    <label class="mt-5 mb-2">Nombre</label>
+                    <label class="mt-5 mb-2 text-light">Nombre</label>
                     <input class="form-control" placeholder="Nombre">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <label for="exampleFormControlInput1" class="form-label text-light">Email</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label ">Mensaje</label>
+                    <label for="exampleFormControlTextarea1" class="form-label text-light ">Mensaje</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <div class="text-center">
                     <button type="button" class="btn btn-outline-info ">Enviar</button>
                 </div>
             </form>
+
+            
         </section>
+
+
+
+
     </main>
+
+
+
     <footer class="bg-dark text-center text-light p-4">
-        <p class="mb-0">Redes. 
-            <a href="https://www.instagram.com/frangabrielleschi/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/franco-gabrielleschi-2573641a0/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/franmarg92"><i class="fa-brands fa-github"></i></a>
+        <p class="mb-0">Podes encontrarme en 
+              <a href="https://www.instagram.com/frangabrielleschi/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/franco-gabrielleschi-2573641a0/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/franmarg92"><i class="fa-brands fa-github"></i></a>
         </p>
     </footer>
     <script src="./assets/js/script.js"></script>
