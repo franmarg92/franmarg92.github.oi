@@ -1,23 +1,24 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav-link');
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('.navbar a');
     const sections = document.querySelectorAll('.section');
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
+    function handleNavigation(event) {
+        event.preventDefault();
 
-            // Remove active class from all links
-            navLinks.forEach(link => link.classList.remove('active'));
-            // Add active class to the clicked link
-            this.classList.add('active');
+        // Eliminar clase activa de todos los enlaces y secciones
+        links.forEach(link => link.classList.remove('active'));
+        sections.forEach(section => section.classList.remove('active'));
 
-            // Get the target section ID from data-target attribute
-            const targetId = this.getAttribute('data-target');
+        // Agregar clase activa a la sección correspondiente
+        const targetId = event.target.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
 
-            // Hide all sections
-            sections.forEach(section => section.classList.remove('active'));
-            // Show the target section
-            document.getElementById(targetId).classList.add('active');
-        });
-    });
+        event.target.classList.add('active');
+        targetSection.classList.add('active');
+
+        // Desplazamiento suave hacia la sección seleccionada
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    links.forEach(link => link.addEventListener('click', handleNavigation));
 });

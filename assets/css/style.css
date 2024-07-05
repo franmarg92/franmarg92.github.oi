@@ -1,9 +1,14 @@
-
-body{
-    background-image: url("https://codersfree.nyc3.cdn.digitaloceanspaces.com/posts/descubre-los-6-lenguajes-de-programacion-con-mas-demanda-en-el-2023.jpg");
-    background-size: cover; 
-    background-position: center; 
+/* Estilos generales */
+body {
+    background-image: url("https://www.sivsa.com/site/wp-content/uploads/2018/11/ai-artificial-intelligence-code-34676.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Asegura que la imagen de fondo no se mueva con el contenido */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -11,7 +16,7 @@ body{
     background-color: #343a40;
     position: fixed;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000; /* Asegura que la navbar esté siempre encima */
 }
 
 .logo {
@@ -42,86 +47,55 @@ nav {
     color: #00abf0;
 }
 
-.section {
-    display: none;
-    transform: translateY(100%);
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    opacity: 0;
+main {
     padding-top: 60px; /* Para evitar que el contenido quede oculto detrás de la navbar */
 }
 
-.section.active {
-    display: block;
-    transform: translateY(0);
-    opacity: 1;
-}
-
+/* Sección Inicio */
 .home {
-    height: 94vh;
+    height: 100vh;
     display: flex;
-    
+    align-items: center;
+    justify-content: center;
+    background: none; /* Asegura que la sección Inicio no tenga una imagen de fondo */
 }
 
 .home-content {
-    display: flex;
-    align-items: center;
-    margin: 200px 200px 500px 1200px;
     max-width: 600px;
+    text-align: center;
 }
 
 .primerletra {
     color: #00abf0;
 }
 
-.aboutme {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
+/* Sección General */
+.section {
+    padding: 50px 0; /* Añadido un padding general para que no quede pegado a los bordes */
+    opacity: 0; /* Empieza oculto */
+    transition: opacity 1s ease-in-out; /* Efecto de desvanecimiento */
 }
 
-.aboutme img {
-    border-radius: 30%;
-    border: #343a40 solid;
-    margin-right: 200px;
+.section.active {
+    opacity: 1; /* Visible cuando tiene la clase active */
 }
 
-#Sobre-mi {
-    height: 100vh;
-    
+#Sobre-mi, #Estudios, #Habilidades, #Contacto {
+    height: auto; /* Altura auto para que el contenido ajuste el tamaño */
+    background: none; /* Asegura que no haya un fondo en las otras secciones */
 }
 
-#Sobre-mi h1 {
-    display: flex;
-    justify-content: center;
-}
-
-#Estudios {
-    height: 100vh;
-    
-}
-
-#Estudios h1 {
+#Sobre-mi h1, #Estudios h1, #Habilidades h1, #Contacto h1 {
     display: flex;
     justify-content: center;
 }
 
-#Habilidades {
-    height: 100vh;
-    
-}
-
-#Habilidades h1 {
-    display: flex;
-    justify-content: center;
-}
-
+/* Otras secciones */
 .habilidades {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 100px;
-    color: white;
 }
 
 .habilidades img {
@@ -130,16 +104,48 @@ nav {
     margin-right: 100px;
 }
 
-#Contacto {
-    height: 100vh;    
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-#Contacto h1 {
-    display: flex;
-    justify-content: center;
+footer a {
+    color: #00abf0;
+    margin: 0 10px;
 }
 
+/* Breakpoints para dispositivos móviles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.section h1{
-    color: white;
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .home-content {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .habilidades {
+        flex-direction: column;
+    }
+
+    .habilidades img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
